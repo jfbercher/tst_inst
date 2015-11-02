@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: lfm
+Version: .0
+Summary: 'Test install'
+Home-page: https://
+Author: Iñigo Serna
+Author-email: inigoserna@gmail.com
+License: GPL3+
+Description: 'test install'.
+        Released under GNU Public License, read COPYING file for more details.
+Keywords: 
+Platform: POSIX
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console :: Curses
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Topic :: Utilities
