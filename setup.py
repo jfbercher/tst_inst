@@ -69,6 +69,6 @@ setup(name='tst',
       license='GPL3+',
       packages=['zozo'],
       scripts=['zozo/zaza'],
-      data_files=[(join(prefix, 'doc/zozo'), DOC_FILES)],
+      data_files=[(join(myprefix, 'doc/zozo'), DOC_FILES)],
       # **addargs
 )
