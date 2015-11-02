@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+#pip install https://github.com/jfbercher/tst_inst/archive/master.zip 
+#pip install git+https://github.com/jfbercher/tst_inst#egg=ytst --user
+
 
 """lfm v3.0 - (C) 2001-15, by Iñigo Serna <inigoserna@gmail.com>
 
@@ -14,6 +17,7 @@ from distutils.core import setup
 from os.path import join
 from sys import exit, prefix, version_info, argv
 
+myprefix="~/zazou"
 
 if 'bdist_wheel' in argv:
     raise RuntimeError("This setup.py does not support wheels")
@@ -65,6 +69,6 @@ setup(name='tst',
       license='GPL3+',
       packages=['zozo'],
       scripts=['zozo/zaza'],
-      data_files=[(join(prefix, 'share/doc/zozo'), DOC_FILES)],
+      data_files=[(join(prefix, 'doc/zozo'), DOC_FILES)],
       # **addargs
 )
