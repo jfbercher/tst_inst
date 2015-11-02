@@ -17,7 +17,7 @@ from distutils.core import setup
 from os.path import join
 from sys import exit, prefix, version_info, argv
 
-myprefix="~/zazou"
+myprefix="home/bercherj/zazou"
 
 if 'bdist_wheel' in argv:
     raise RuntimeError("This setup.py does not support wheels")
