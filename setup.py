@@ -12,13 +12,13 @@ Released under GNU Public License, read COPYING file for more details.
 
 from distutils.core import setup
 from os.path import join
-from sys import exit, prefix, version_info
+from sys import exit, prefix, version_info, argv
 
 
-if 'bdist_wheel' in sys.argv:
+if 'bdist_wheel' in argv:
     raise RuntimeError("This setup.py does not support wheels")
 
-if 'install' in sys.argv:
+if 'install' in argv:
     print("Install in args")
 
 
