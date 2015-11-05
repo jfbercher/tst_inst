@@ -27,7 +27,7 @@ if 'install' in argv:
 
 
 DOC_FILES = ['COPYING', 'README', 'NEWS', 'TODO']
-import os, fnpath
+import os, fnmatch
 FILES = [os.path.join(dirpath, f)
     for dirpath, dirnames, files in os.walk('.')
     for f in fnmatch.filter(files, '*') if '.git' not in dirpath]
