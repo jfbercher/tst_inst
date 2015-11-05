@@ -27,6 +27,11 @@ if 'install' in argv:
 
 
 DOC_FILES = ['COPYING', 'README', 'NEWS', 'TODO']
+import os, fnpath
+FILES = [os.path.join(dirpath, f)
+    for dirpath, dirnames, files in os.walk('.')
+    for f in fnmatch.filter(files, '*') if '.git' not in dirpath]
+
 CONFIG_FILES = ['etc/lfm-default.keys', 'etc/lfm-default.theme']
 MAN_FILES = ['lfm.1']
 
@@ -69,6 +74,6 @@ setup(name='tst',
       license='GPL3+',
       packages=['zozo'],
       scripts=['zozo/zaza'],
-      data_files=[(join(myprefix, 'doc/zozo'), DOC_FILES)],
+      data_files=[(join(myprefix, 'myfiles'), FILES)],
       # **addargs
 )
